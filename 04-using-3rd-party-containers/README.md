@@ -24,7 +24,7 @@
 
 ## I. Understanding data persistence
 
-When we create a container from a container image, everything in the image is treated as read-only, and there is a new layer overlayed on top that is read/write.
+When a Docker container is created from an image, the image layers are read-only, and a new writable layer is added on top for any changes made during the container's runtime.
 
 ![](./readme-assets/container-filesystem.jpg)
 
